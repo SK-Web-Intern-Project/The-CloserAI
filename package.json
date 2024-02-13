@@ -9,6 +9,9 @@
     "lint": "next lint",
     "format": "biome format --write ./"
   },
+  "exports": {
+    "./biome": "./biome.json"
+  },  
   "dependencies": {
     "@supabase/supabase-js": "^2.39.4",
     "ai": "2.2.35",
