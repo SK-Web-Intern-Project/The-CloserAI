@@ -11,8 +11,9 @@
   },
   "exports": {
     "./biome": "./biome.json"
-  },  
+  },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.15",
     "@supabase/supabase-js": "^2.39.4",
     "ai": "2.2.35",
     "dotenv": "^16.4.3",
