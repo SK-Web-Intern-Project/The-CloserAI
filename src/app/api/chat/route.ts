@@ -21,3 +21,11 @@ interface FunctionInfo {
   name: string;
   active: boolean;
 }
+
+// 3. Set up environment variables
+// biome-ignore lint/style/noNonNullAssertion: <explanation>
+const privateKey: string = process.env.SUPABASE_PRIVATE_KEY!;
+// biome-ignore lint/style/noNonNullAssertion: <explanation>
+const url: string = process.env.SUPABASE_URL!;
+if (!privateKey) throw new Error("Expected env var SUPABASE_PRIVATE_KEY");
+if (!url) throw new Error("Expected env var SUPABASE_URL");
