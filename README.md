@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# THe Closer AI - Antropic Claude Clone With Langchain, Next.js, Vercel, AI SDK, and Supabase
 
-## Getting Started
+Antropic Claude Clone is an AI chat application built using Next.js, Langchain, and Vercel, featuring AI capabilities powered by Langchain's AI SDK and data storage using Supabase. This application enables users to engage in conversations with an AI-powered assistant and perform various tasks using different functions.
 
-First, run the development server:
+## Frontend
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The frontend of the application is developed using Next.js and React.js, providing an intuitive and responsive user interface. It comprises the following key components:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ModelSelector Component
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The ModelSelector component allows users to choose the AI model they wish to interact with during the conversation. The currently selected model's logo is displayed, and users can switch between available models using a dedicated button.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### WelcomeBack Component
 
-## Learn More
+The WelcomeBack component greets users with a visually appealing welcome message when they enter the chat interface.
 
-To learn more about Next.js, take a look at the following resources:
+### VectorSelector Component
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The VectorSelector component empowers users to select vector storage options for any attached files. It offers a selection of icons representing different vector storage choices, giving users the flexibility to switch between these options seamlessly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Main App Component
 
-## Deploy on Vercel
+The heart of the application is the Main App component, which handles core chat functionality. This component takes care of:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Sending and receiving messages between the user and the AI assistant.
+- Presenting user and assistant messages, each with their respective avatars.
+- Attaching files to messages and displaying pertinent file information.
+- Enabling or disabling various functions and presenting a function selector.
+- Providing keyboard shortcuts information for user convenience.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Backend
+
+The backend functionality is implemented using Node.js and leverages serverless functions to handle user requests and AI-related tasks. The backend is responsible for:
+
+- Processing incoming POST requests containing messages, functions, files, and additional data.
+- Managing user input and handling attached files as needed.
+- Interacting with vector storage via Supabase to manage file content.
+- Executing AI models and tools based on user selections.
+- Delivering AI-generated responses to the frontend in a streaming format.
+
+## Dependencies
+
+The project relies on a combination of technologies and libraries to deliver its robust functionality:
+
+- Next.js and React.js for creating the frontend.
+- Node.js for the serverless backend functions.
+- Langchain SDK for interacting with AI models and tools.
+- Vercel for hosting and deployment.
+- Supabase for efficient vector storage.
+- @supabase/supabase-js for interfacing with Supabase.
+- zod for schema validation.
+
+## Setup
+
+To set up the project on your local environment or deploy it to a live platform:
+
+1. Clone the repository.
+2. Navigate to both the frontend and backend directories.
+3. Install required dependencies using `pnpm install` within each directory.
+4. Configure environment variables within the backend.
+5. Run the frontend by executing `pnpm run dev` in the frontend directory.
+6. Deploy the backend to a serverless platform such as Vercel for live deployment.
+
+## Contributions
+
+Contributions to enhance and refine the project are encouraged and warmly welcomed! Whether you uncover issues or have innovative ideas to enhance the application, please feel free to open issues or submit pull requests.
+
+## License
+
+This project operates under the [GPL-3.0](LICENSE), allowing for freedom of use and modification.
