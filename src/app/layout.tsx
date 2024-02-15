@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Claude + Langchain',
+  title: 'TheCloserAI Chatbot',
   description: 'Claude Inspired UI Kit for Langchain apps.'
 }
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="{inter.className}" style={{ backgroundColor: "#efede6" }}>{children}</body>
+      <body className="{inter.className}" style={{ backgroundColor: "#F9FDFF" }}>{children}</body>
     </html>
   );
 }
