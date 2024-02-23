@@ -67,4 +67,5 @@ Contributions to enhance and refine the project are encouraged and warmly welcom
 
 ## License
 
-This project operates under the [GPL-3.0](LICENSE), allowing for freedom of use and modification.
+This project is licensed under the [GPL-3.0](LICENSE), which grants you the freedom to use and modify the source code within this repository, subject to the terms of the license.
+
