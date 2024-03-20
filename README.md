@@ -1,6 +1,6 @@
 # THe Closer AI - Antropic Claude Clone With Langchain, Next.js, Vercel, AI SDK, and Supabase
 
-Antropic Claude Clone is an AI chat application built using Next.js, Langchain, and Vercel, featuring AI capabilities powered by Langchain's AI SDK and data storage using Supabase. This application enables users to engage in conversations with an AI-powered assistant and perform various tasks using different functions.
+Dynamic chatbot, fueled by Claude AI, seamlessly integrated with Amazon Web Services API gateways. Tailored for law students, this innovative tool ensures swift and insightful interactions while providing the capability to check PDF attachment files, catering to diverse needs with ease.
 
 ## Frontend
 
